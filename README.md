@@ -3,15 +3,15 @@
 
 ## About the Project
 
-For this project, I made a program that can detect when someone is using a phone. It uses an NVIDIA Jetson Orin Nano, a webcam, and an AI model that I trained myself. When the camera sees a phone for a few seconds, the program gives an alert telling the person to put their phone away.
+For this project, I made a program that can detect when someone is using a phone. It uses an NVIDIA Jetson Orin Nano, a webcam, and an AI model that I trained myself. When the camera sees a phone for a few seconds, the program recognizes the phone in their hand.
 
 ## How It Works
 
-First, the webcam records a live video feed. Every frame is sent to my AI model, which looks for mobile phones. If the model detects a phone and it stays visible for a few seconds, the program displays a warning message. If the phone is removed, the alert stops and the program starts watching again.
+First, the webcam records a live video feed. Every frame is sent to my AI model, which looks for mobile phones. If the model detects a phone, the program displays a box around the phone in frame. If the phone is removed, there is no object box display around any recognized objects.
 
 ## How I Made It
 
-I used NVIDIA's Jetson Inference library and DetectNet SSD to train my own object detection model. I trained it using the Open Images dataset, which has thousands of pictures of mobile phones with labeled bounding boxes. After training the model, I exported it and used it in a Python program that runs on the Jetson Orin Nano.
+I used NVIDIA's Jetson Inference library and DetectNet SSD to train my own object detection model. I trained it using the Open Images dataset, which has thousands of pictures of mobile phones with labeled bounding boxes. After training the model, I exported it and ran it on the Jetson Orin Nano.
 
 ## Materials Used
 
@@ -24,7 +24,7 @@ I used NVIDIA's Jetson Inference library and DetectNet SSD to train my own objec
 
 ## Challenges
 
-One challenge was learning how to train the AI model and getting all of the files set up correctly. Another challenge was making sure the program only alerts after a phone has been detected for a few seconds so it doesn't constantly give false alarms.
+One challenge was learning how to train the AI model and getting all of the files set up in the correct folders.
 
 ## What I Learned
 
