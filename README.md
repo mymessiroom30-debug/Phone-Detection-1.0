@@ -2,7 +2,7 @@
 
 ## About the Project
 
-For this project, I made a program that can detect when someone is using a phone. It uses an NVIDIA Jetson Orin Nano, a webcam, and an AI model that I trained myself. When the camera sees a phone for a few seconds, the program recognizes the phone in their hand.
+  For this project, I made a program that can detect when someone is using a phone. It uses an NVIDIA Jetson Orin Nano, a webcam, and an AI model that I trained myself. When the camera sees a phone for a few seconds, the program recognizes the phone in their hand.
 
 ## How It Works
 
